@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 105%;
+  width: 100%;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.background {
+  background: url('hawks.jpg') no-repeat center center;
+  background-size: cover;
+  height: 120vh;
+  position: relative;
+  z-index: 1;
+   
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparan putih */
+}
+.navbar {
+  position: relative;
+  top: 1;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  color: rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2; /* Menempatkan di atas latar belakang */
+  height: 100vh;
+  color: #fff;
+  
+}
+.login-container .top {
+  margin-bottom: 20px;
+  color: #fff; /* Warna teks */
+}
+
+.login-container .top header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+.login-box {
+  background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+
+.textbox {
+  margin-bottom: 20px;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.options label {
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+
+.options input[type="checkbox"] {
+  margin-right: 2  px;
+}
+
+.options a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+}
+
+.buttons button:hover {
+  background: #555;
+}
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    color: rgba(255, 255, 255, .4);
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.1); ;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+  }
+  
+  nav div img {
+    width: 50px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+    color: #191919;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+  }
+  
+  nav ul li a:hover {
+    color: orangered;
+    border-bottom: 1px solid orangered;
+  }
+  
+  .menu-icon {
+    /* background-color: tomato; */
+    font-size: 28px;
+    display: none;
+  }
+  
+  .main {
+    padding-top: 7rem;
+  }
+  
+  @media only screen and (max-width: 20px) {
+    nav {
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li:last-of-type {
+      padding-bottom: 8px;
+    }
+  
+    nav ul.hidden {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+.parallax-1 {
+    background: url('image1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-2 {
+    background: url('image2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-3 {
+    background: url('imagae3.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-4 {
+    background: url('image4.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-inner {
+    padding: 10% 0;
+}
+
+h2 {
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 20px 0 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+    line-height: 30px;
+    margin: 0 50px 40px;
+}
+
+p:nth-of-type(2),
+p:nth-of-type(3) {
+    margin: 40px 50px;
+}
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-control textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.square {
+  width: 147px;
+  height: 180px;
+  background-color: #ccc; /* Warna latar belakang untuk placeholder persegi */
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.square img {
+  max-width: 150%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contact-details {
+  max-width: 400px;
+}
+
+.contact-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-details ul li {
+  margin-bottom: 10px;
+}
+
+.contact-details ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-details ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+  margin-top: 5px;
+  bottom: 0;
+  width: 100%;
+}

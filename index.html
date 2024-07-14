@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+</head>
+
+<body>
+  <section id="home" class="section"></section>
+  <section class="background">
+    <nav>
+        <div class="">
+          <img src="hawks.jpg" alt="hawks.jpg" />
+        </div>
+        <div id="menu-icon" class="menu-icon">
+          <i class="ph-fill ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#service">Service</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="login-container">
+        <div class="top">
+          <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+          <center><b>Login</b></center>
+      </div>
+        <div class="login-box">
+            <form>
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Sign In</button>
+                    <button type="button" onclick="register()">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <section>
+        <section id="about" class="section"></section>
+        <section class="parallax-1">
+            <div class="parallax-inner">
+                <h1>Scroll Down</h1>
+            </div>
+        </section>
+        <h2>About Us</h2>
+        <p>Welcome to Snow, your ultimate destination for experiencing the magic of winter all year round. Founded from a passion for winter sports and serene snowy landscapes, we offer a variety of experiences including skiing, snowboarding, and ice skating, along with cozy accommodations and festive winter-themed events. Committed to exceptional customer service and sustainability, Snow aims to create unforgettable memories while preserving the natural beauty of our snowy environments. Join us and step into a winter wonderland anytime!</p>
+        <section id="service" class="section"></section>
+        <section class="parallax-2">
+            <div class="parallax-inner">
+                <h1>Snow Effect</h1>
+            </div>
+        </section>
+        <p>Snow is the dream destination for experiencing the magic of winter all year round. Offering thrilling activities such as skiing, snowboarding, and ice skating, along with cozy accommodations and winter-themed events, we bring the charm of snowy landscapes to everyone. Founded from a love for winter sports and natural beauty, Snow is committed to providing exceptional customer service and promoting environmental sustainability. Join us and enjoy the wonder of snow anytime!.</p>
+        <section class="parallax-3">
+            <div class="parallax-inner">
+                <h1>EFFECT</h1>
+            </div>
+        </section>
+        <p>At Snow, we offer a comprehensive range of services designed to enhance your winter experience. From thrilling activities like skiing, snowboarding, and ice skating to relaxing in our cozy, well-appointed accommodations, we cater to all your winter wonderland desires. Our expert instructors and guides provide lessons and tours to ensure everyone, from beginners to seasoned adventurers, enjoys their time. Additionally, we host a variety of festive events, including holiday markets and themed parties, creating a vibrant community atmosphere. Committed to excellence, our dedicated team is here to provide exceptional service and ensure your stay is unforgettable.</p>
+            <section class="parallax-4">
+                <div class="parallax-inner">
+                    <h1>Scroll Up</h1>
+                </div>
+            </section>
+    </section>
+    <section id="contact" class="section contact"></section>
+    <section class="contact">
+      <div class="container">
+          <h1>Contact Us</h1>
+          <form action="#">
+              <div class="form-control">
+                  <label for="username">Your Name:</label>
+                  <input type="text" id="username" name="username" required>
+              </div>
+              <div class="form-control">
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-control">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+
+      <div class="contact-info">
+          <div class="square">
+              <!-- Placeholder for square image -->
+              <img src="imagesquare.jpg" alt="Square Image">
+          </div>
+          <div class="contact-details">
+              <h2>Contact Information</h2>
+              <ul>
+                  <li>Email: info@example.com</li>
+                  <li>Phone: +1234567890</li>
+                  <li>Address: 123 Street, City, Country</li>
+                  <li>
+                      <a href="#">Facebook</a> |
+                      <a href="#">Twitter</a> |
+                      <a href="#">Instagram</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+      <center>&copy; 2024 Your Company. All rights reserved.</center>
+  </footer>
+
+
+</body>
+
+</html>
